@@ -1,0 +1,68 @@
+{
+  "html": {
+    "lang": "en",
+    "title": "Siraphop | Portal",
+    "description": "Follow all my social media profiles in one place",
+    "favicon": "/favicon.png"
+  },
+  "background": {
+    "firstColor": "#db222a",
+    "secondColor": "#641220"
+  },
+  "header": {
+    "image": "/profile.webp",
+    "title": "FujaTyping",
+    "description": "3D Modeler / Thai translate / Web developer / Roblox scripter",
+    "textColor": "white"
+  },
+  "socials": [
+    {
+      "network": "GitHub",
+      "username": "fujatyping",
+      "url": "https://github.com/fujatyping"
+    },
+    {
+      "network": "X",
+      "username": "fujatyping",
+      "url": "https://x.com/FujaTyping"
+    },
+    {
+      "network": "Mail",
+      "username": "fujatyping",
+      "url": "mailto:siraphopsukchu.ydev@gmail.com"
+    }
+  ],
+  "featured": [
+    {
+      "network": "GitHub",
+      "url": "https://github.com/FujaTyping",
+      "title": "My github",
+      "textColor": "#FFF",
+      "backgroundImage": "https://githubuniverse.com/og-image-24.jpg",
+      "backgroundColor": null,
+      "borderRadius": ".75rem"
+    }
+  ],
+  "buttons": [
+    {
+      "network": "GitHub",
+      "url": "https://futami.siraphop.me/",
+      "title": "Futami project",
+      "textColor": "#FFF",
+      "backgroundColor": "#000",
+      "borderRadius": ".75rem"
+    },
+    {
+      "network": "Discord",
+      "url": "https://discord.gg/D2CGTCuW2g",
+      "title": "YDev ™ Community server",
+      "textColor": "#FFF",
+      "backgroundColor": "#000",
+      "borderRadius": ".75rem"
+    }
+  ],
+  "footer": {
+    "copyright": "Made with ❤️ by FujaTyping",
+    "url": "https://siraphop.me"
+  }
+}
