@@ -34,20 +34,20 @@
   ],
   "featured": [
     {
-      "network": "GitHub",
-      "url": "https://github.com/FujaTyping",
-      "title": "My github",
+      "network": "Website",
+      "url": "https://futami.siraphop.me/",
+      "title": "Futami project",
       "textColor": "#FFF",
-      "backgroundImage": "https://githubuniverse.com/og-image-24.jpg",
+      "backgroundImage": "https://futami.siraphop.me/assets/banner/content-index.png",
       "backgroundColor": null,
       "borderRadius": ".75rem"
     }
   ],
   "buttons": [
     {
-      "network": "GitHub",
-      "url": "https://futami.siraphop.me/",
-      "title": "Futami project",
+      "network": "Website",
+      "url": "https://siraphop.me/",
+      "title": "My website",
       "textColor": "#FFF",
       "backgroundColor": "#000",
       "borderRadius": ".75rem"
