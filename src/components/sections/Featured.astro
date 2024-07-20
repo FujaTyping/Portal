@@ -1,5 +1,5 @@
 ---
-import { featured } from "index.json";
+import { spotify, featured } from "index.json";
 import Section from "@/components/Section.astro";
 
 import Discord from "@/icons/Discord.astro";
@@ -39,6 +39,28 @@ const SOCIAL_ICONS: Record<string, any> = {
 
 <Section>
   <div class="container">
+    {
+      spotify.map(
+        ({
+          embedurl
+        }) => {
+          return (
+            <iframe
+              src={embedurl}
+              class="embed"
+              style="border-radius:12px"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            >
+            </iframe>
+          );
+        },
+      )
+    }
     {
       featured.map(
         ({
@@ -109,5 +131,16 @@ const SOCIAL_ICONS: Record<string, any> = {
   .button:active {
     box-shadow: none;
     transform: translateY(0);
+  }
+
+  .embed {
+      transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .embed:hover {
+    box-shadow:
+      inset 0 -40px 80px 0 #000,
+      0 8px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
   }
 </style>
