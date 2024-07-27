@@ -15,6 +15,33 @@
     "description": "3D Modeler / Thai translate / Web developer / Roblox scripter",
     "textColor": "white"
   },
+  "game": [
+    {
+      "name": "Minecraft",
+      "logo": "https://preview.redd.it/minecraft-logo-v0-ak9w918zi5r81.png?auto=webp&s=614e5180aa1f7068676a06351c8edffc86b3b58a",
+      "display": "FujaTyping"
+    },
+    {
+      "name": "Roblox",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg",
+      "display": "FujaTyping"
+    },
+    {
+      "name": "Genshin Impact",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPHpfe_BWDsR7RJ0DLCcrGrc3Mu6tBWprhQ&s",
+      "display": "868190043"
+    },
+    {
+      "name": "Star Rail",
+      "logo": "https://play-lh.googleusercontent.com/5Woh37tRPzsVELLC5lXmAY11d-Vcz-8PwEfsUheFARakkpPecT0AKE0a31hMCNZ9axg=s132-rw",
+      "display": "800822028"
+    },
+    {
+      "name": "HOK",
+      "logo": "https://play-lh.googleusercontent.com/73i1fY0ewi9PojudqwPzmGKxmhJ-MWaQR3UZvJxttIoVV4OwyK_wg-EG2q-c_JHZ50s",
+      "display": "FJT"
+    }
+  ],
   "socials": [
     {
       "network": "GitHub",
@@ -33,9 +60,6 @@
     }
   ],
   "spotify": [
-    {
-      "embedurl": "https://open.spotify.com/embed/track/389rEslJY9vh7TZemIA4y7?utm_source=generator"
-    }
   ],
   "featured": [
     {

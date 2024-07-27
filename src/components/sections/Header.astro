@@ -1,5 +1,5 @@
 ---
-import { header } from "index.json";
+import { header, game } from "index.json";
 import Section from "@/components/Section.astro";
 
 const { title, description, image, textColor } = header;
@@ -10,10 +10,50 @@ const { title, description, image, textColor } = header;
     <img src=`${image}` />
     <h1>{title}</h1>
     <h2>{description}</h2>
+    <div class="game-container">
+      {
+        game.map(({ name, logo, display }) => {
+          let AltText = `${name} : `;
+          return (
+            <span class="badge">
+              <img
+                src={logo}
+                alt={AltText}
+                style="vertical-align: middle;"
+                class="game-icon"
+              />
+              {display}
+            </span>
+          );
+        })
+      }
+    </div>
   </div>
 </Section>
 
 <style>
+  .game-container {
+    display: flex;
+    margin-top: 8px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    background-color: #e72e38;
+    color: #fff;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .game-icon {
+    max-width: 25px;
+  }
+
   h1 {
     padding-top: 1rem;
     font-family: DemonSayHi;

@@ -44,12 +44,7 @@ const SOCIAL_ICONS: Record<string, any> = {
         const Icon = SOCIAL_ICONS[network];
 
         return (
-          <a
-            href={url}
-            aria-label={`Visita el perfil de ${username} en ${network}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={url} target="_blank" rel="noopener noreferrer">
             <Icon />
           </a>
         );
