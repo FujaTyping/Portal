@@ -12,7 +12,7 @@
   "header": {
     "image": "/profile.webp",
     "title": "FujaTyping",
-    "description": "3D Modeler / Thai translate / Web developer / Roblox scripter",
+    "description": "3D Modeler • Thai translate • Web developer • Roblox scripter",
     "textColor": "white"
   },
   "game": [
@@ -35,11 +35,6 @@
       "name": "Star Rail",
       "logo": "https://play-lh.googleusercontent.com/5Woh37tRPzsVELLC5lXmAY11d-Vcz-8PwEfsUheFARakkpPecT0AKE0a31hMCNZ9axg=s132-rw",
       "display": "800822028"
-    },
-    {
-      "name": "HOK",
-      "logo": "https://play-lh.googleusercontent.com/73i1fY0ewi9PojudqwPzmGKxmhJ-MWaQR3UZvJxttIoVV4OwyK_wg-EG2q-c_JHZ50s",
-      "display": "FJT"
     }
   ],
   "socials": [
@@ -57,10 +52,14 @@
       "network": "Mail",
       "username": "fujatyping",
       "url": "mailto:siraphopsukchu.ydev@gmail.com"
+    },
+    {
+      "network": "Website",
+      "username": "fujatyping",
+      "url": "https://siraphop.me/"
     }
   ],
-  "spotify": [
-  ],
+  "spotify": [],
   "featured": [
     {
       "network": "Website",
@@ -70,17 +69,18 @@
       "backgroundImage": "https://futami.siraphop.me/assets/banner/content-index.png",
       "backgroundColor": null,
       "borderRadius": ".75rem"
+    },
+    {
+      "network": "Website",
+      "url": "https://envision.siraphop.me/",
+      "title": "Home for All Project",
+      "textColor": "#FFF",
+      "backgroundImage": "./assets/Envision-Banner.png",
+      "backgroundColor": null,
+      "borderRadius": ".75rem"
     }
   ],
   "buttons": [
-    {
-      "network": "Website",
-      "url": "https://siraphop.me/",
-      "title": "My website",
-      "textColor": "#FFF",
-      "backgroundColor": "#000",
-      "borderRadius": ".75rem"
-    },
     {
       "network": "Discord",
       "url": "https://discord.gg/D2CGTCuW2g",
