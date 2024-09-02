@@ -51,7 +51,7 @@
     {
       "network": "Mail",
       "username": "fujatyping",
-      "url": "mailto:siraphopsukchu.ydev@gmail.com"
+      "url": "mailto:contact@siraphop.me"
     },
     {
       "network": "Website",
@@ -73,7 +73,7 @@
     {
       "network": "Website",
       "url": "https://envision.siraphop.me/",
-      "title": "Home for All Project",
+      "title": "Home for All project",
       "textColor": "#FFF",
       "backgroundImage": "./assets/Envision-Banner.png",
       "backgroundColor": null,
