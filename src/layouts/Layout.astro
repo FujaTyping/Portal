@@ -1,81 +1,89 @@
 ---
+import "aos/dist/aos.css";
 import { html, background } from "index.json";
 
 const { lang, title, description, favicon } = html;
-const { firstColor, secondColor } = background;
+const { firstColor, secondColor, imagebg } = background;
 ---
 
 <!doctype html>
 <html lang={`${lang}`}>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content={`${description}`} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href={`${favicon}`} />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="theme-color" content={`${firstColor}`} />
-    <title>{title}</title>
-  </head>
-  <body>
-    <slot />
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={`${description}`} />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/png" href={`${favicon}`} />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="theme-color" content={`${firstColor}`} />
+        <title>{title}</title>
+    </head>
+    <body style={`--imagebg: url('${imagebg}');`}>
+        <slot />
+    </body>
 </html>
 <style is:global define:vars={{ firstColor, secondColor }}>
-  @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  @font-face {
-    font-family: DemonSayHi;
-    src: url(/src/assets/DemonSayHi.ttf);
-  }
-
-  html {
-    font-family: "Prompt";
-  }
-
-  body,
-  figure {
-    background: linear-gradient(var(--firstColor), var(--secondColor));
-    min-height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 2rem 0 2rem 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    margin: 0;
-  }
-
-  p {
-    color: #888;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    margin: 0;
-    text-wrap: pretty;
-  }
-
-  @media only screen and (max-width: 768px) {
-    body {
-      width: 80%;
+    @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    @font-face {
+        font-family: DemonSayHi;
+        src: url(/src/assets/DemonSayHi.ttf);
     }
-  }
+
+    html {
+        font-family: "Prompt";
+    }
+
+    body,
+    figure {
+        background: linear-gradient(var(--firstColor), var(--secondColor));
+        /*background-image: var(--imagebg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 2rem 0 2rem 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 0;
+    }
+
+    p {
+        color: #888;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin: 0;
+        text-wrap: pretty;
+    }
+
+    @media only screen and (max-width: 768px) {
+        body {
+            width: 80%;
+        }
+    }
 </style>
+<script>
+    import AOS from "aos";
+    AOS.init();
+</script>
