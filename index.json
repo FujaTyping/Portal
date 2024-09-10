@@ -60,7 +60,11 @@
       "url": "https://siraphop.me/"
     }
   ],
-  "spotify": [],
+  "spotify": [
+    {
+      "embedurl": "https://open.spotify.com/embed/track/0RtYfzwkgj0sOBuZc3NmSK?utm_source=generator"
+    }
+  ],
   "featured": [
     {
       "network": "Website",
