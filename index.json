@@ -93,6 +93,14 @@
       "textColor": "#FFF",
       "backgroundColor": "#000",
       "borderRadius": ".75rem"
+    }, 
+    {
+      "network": "Website",
+      "url": "https://www.quora.com/What-do-the-people-think-about-Thai-education",
+      "title": "Education situation in Thailand",
+      "textColor": "#FFF",
+      "backgroundColor": "#000",
+      "borderRadius": ".75rem"
     }
   ],
   "footer": {
