@@ -17,67 +17,69 @@ import WhatsApp from "@/icons/WhatsApp.astro";
 import X from "@/icons/X.astro";
 import YouTube from "@/icons/YouTube.astro";
 import Website from "@/icons/Website.astro";
+import Uptime from "@/icons/Uptime.astro";
 
 const SOCIAL_ICONS: Record<string, any> = {
-  Discord,
-  Facebook,
-  GitHub,
-  Instagram,
-  LinkedIn,
-  Mail,
-  Map,
-  Medium,
-  Spotify,
-  TikTok,
-  Twitch,
-  WhatsApp,
-  X,
-  YouTube,
-  Website,
+    Discord,
+    Facebook,
+    GitHub,
+    Instagram,
+    LinkedIn,
+    Mail,
+    Map,
+    Medium,
+    Spotify,
+    TikTok,
+    Twitch,
+    WhatsApp,
+    X,
+    YouTube,
+    Website,
+    Uptime,
 };
 ---
 
 <Section>
-  <div class="container">
-    {
-      socials.map(({ network, username, url }) => {
-        const Icon = SOCIAL_ICONS[network];
+    <div class="container">
+        {
+            socials.map(({ network, username, url }) => {
+                const Icon = SOCIAL_ICONS[network];
 
-        return (
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <Icon />
-          </a>
-        );
-      })
-    }
-  </div>
+                return (
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                        <Icon />
+                    </a>
+                );
+            })
+        }
+    </div>
 </Section>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
 
-  .container a {
-    color: white;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    padding: 4px;
-    height: 50px;
-    width: 50px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-  }
+    .container a {
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        padding: 4px;
+        height: 50px;
+        width: 50px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
 
-  .container a:hover {
-    color: black;
-    background: #fff;
-    border: 1px solid #ddd;
-  }
+    .container a:hover {
+        color: black;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
 </style>

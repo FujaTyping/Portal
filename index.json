@@ -58,6 +58,11 @@
       "network": "Website",
       "username": "fujatyping",
       "url": "https://siraphop.me/"
+    },
+    {
+      "network": "Uptime",
+      "username": "fujatyping",
+      "url": "https://x.siraphop.me/"
     }
   ],
   "spotify": [
@@ -90,22 +95,6 @@
       "network": "Discord",
       "url": "https://discord.gg/D2CGTCuW2g",
       "title": "YDev ™ Community server",
-      "textColor": "#FFF",
-      "backgroundColor": "#000",
-      "borderRadius": ".75rem"
-    }, 
-    {
-      "network": "Website",
-      "url": "https://x.siraphop.me/",
-      "title": "Upptime monitor",
-      "textColor": "#FFF",
-      "backgroundColor": "#000",
-      "borderRadius": ".75rem"
-    }, 
-    {
-      "network": "Website",
-      "url": "https://www.quora.com/What-do-the-people-think-about-Thai-education",
-      "title": "Education situation in Thailand",
       "textColor": "#FFF",
       "backgroundColor": "#000",
       "borderRadius": ".75rem"
