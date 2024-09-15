@@ -1,5 +1,5 @@
 ---
-import { spotify, featured } from "index.json";
+import { spotify, sklabs, featured } from "index.json";
 import Section from "@/components/Section.astro";
 
 import Discord from "@/icons/Discord.astro";
@@ -39,6 +39,15 @@ const SOCIAL_ICONS: Record<string, any> = {
 
 <Section>
     <div class="container">
+        {
+            sklabs.map(({ url }) => {
+                return (
+                    <object data={url} width="”650″" height="”500″">
+                        <embed src={url} width="”650″" height="”500″" />
+                    </object>
+                );
+            })
+        }
         {
             spotify.map(({ embedurl }) => {
                 return (
@@ -100,6 +109,7 @@ const SOCIAL_ICONS: Record<string, any> = {
         width: 100% !important;
         border-radius: 5px;
         border: 3px solid #e72e38;
+        margin-bottom: 20px;
     }
     .container {
         display: flex;

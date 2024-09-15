@@ -65,9 +65,10 @@
       "url": "https://x.siraphop.me/"
     }
   ],
-  "spotify": [
+  "spotify": [],
+  "sklabs": [
     {
-      "embedurl": "https://open.spotify.com/embed/track/0RtYfzwkgj0sOBuZc3NmSK?utm_source=generator"
+      "url": "https://6klabs.com/widget/spotify/08feec08e3b15293aa630430fc4e97a6d41b4c9e89388f07637209d52bce6e39"
     }
   ],
   "featured": [
