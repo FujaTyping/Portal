@@ -42,9 +42,17 @@ const SOCIAL_ICONS: Record<string, any> = {
         {
             sklabs.map(({ url }) => {
                 return (
-                    <object data={url} width="”650″" height="”500″">
-                        <embed src={url} width="”650″" height="”500″" />
-                    </object>
+                    <>
+                        <object
+                            id="getplayer"
+                            style="display: none;"
+                            data={url}
+                            width="”650″"
+                            height="”500″"
+                        >
+                            <embed src={url} width="”650″" height="”500″" />
+                        </object>
+                    </>
                 );
             })
         }
@@ -103,6 +111,14 @@ const SOCIAL_ICONS: Record<string, any> = {
         }
     </div>
 </Section>
+
+<script>
+    function delayedFunction() {
+        const Slbs = document.getElementById("getplayer");
+        Slbs.style.display = "block";
+    }
+    setTimeout(delayedFunction, 9000);
+</script>
 
 <style>
     hr {
