@@ -115,9 +115,11 @@ const SOCIAL_ICONS: Record<string, any> = {
 <script>
     function delayedFunction() {
         const Slbs = document.getElementById("getplayer");
-        Slbs.style.display = "block";
+        if (Slbs) {
+            Slbs.style.display = "block";
+        }
     }
-    setTimeout(delayedFunction, 9000);
+    setTimeout(delayedFunction, 9500);
 </script>
 
 <style>
