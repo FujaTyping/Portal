@@ -74,6 +74,15 @@
   "featured": [
     {
       "network": "Website",
+      "url": "https://myanimelist.net/animelist/FujaTyping",
+      "title": "My Anime List",
+      "textColor": "#FFF",
+      "backgroundImage": "./assets/Anilist-Banner.png",
+      "backgroundColor": null,
+      "borderRadius": ".75rem"
+    },
+    {
+      "network": "Website",
       "url": "https://futami.siraphop.me/",
       "title": "Futami project",
       "textColor": "#FFF",
