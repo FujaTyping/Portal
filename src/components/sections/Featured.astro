@@ -43,14 +43,7 @@ const SOCIAL_ICONS: Record<string, any> = {
             sklabs.map(({ url }) => {
                 return (
                     <>
-                        <object
-                            id="getplayer"
-                            data={url}
-                            width="”650″"
-                            height="”500″"
-                        >
-                            <embed src={url} width="”650″" height="”500″" />
-                        </object>
+                        <embed src={url} width="”650″" height="”500″" />
                     </>
                 );
             })
