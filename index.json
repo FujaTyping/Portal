@@ -93,6 +93,14 @@
   ],
   "buttons": [
     {
+      "network": "Website",
+      "url": "https://ydev.studio/",
+      "title": "YDev Studio ™ Website",
+      "textColor": "#FFF",
+      "backgroundColor": "#000",
+      "borderRadius": ".75rem"
+    },
+    {
       "network": "Discord",
       "url": "https://discord.gg/D2CGTCuW2g",
       "title": "YDev ™ Community server",
