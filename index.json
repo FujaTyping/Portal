@@ -83,15 +83,6 @@
     },
     {
       "network": "Website",
-      "url": "https://futami.siraphop.me/",
-      "title": "Futami project",
-      "textColor": "#FFF",
-      "backgroundImage": "https://futami.siraphop.me/assets/banner/content-index.png",
-      "backgroundColor": null,
-      "borderRadius": ".75rem"
-    },
-    {
-      "network": "Website",
       "url": "https://envision.siraphop.me/",
       "title": "Home for All project",
       "textColor": "#FFF",
