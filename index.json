@@ -74,6 +74,15 @@
   "featured": [
     {
       "network": "Website",
+      "url": "https://smt.siraphop.me/",
+      "title": "Yorwor67Slash5 project",
+      "textColor": "#FFF",
+      "backgroundImage": "./assets/SMT-Banner.png",
+      "backgroundColor": null,
+      "borderRadius": ".75rem"
+    },
+    {
+      "network": "Website",
       "url": "https://myanimelist.net/animelist/FujaTyping",
       "title": "My Anime List",
       "textColor": "#FFF",
