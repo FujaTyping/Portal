@@ -66,11 +66,7 @@
     }
   ],
   "spotify": [],
-  "sklabs": [
-    {
-      "url": "https://6klabs.com/widget/spotify/08feec08e3b15293aa630430fc4e97a6d41b4c9e89388f07637209d52bce6e39"
-    }
-  ],
+  "sklabs": [],
   "featured": [
     {
       "network": "Website",
@@ -87,15 +83,6 @@
       "title": "My Anime List",
       "textColor": "#FFF",
       "backgroundImage": "./assets/Anilist-Banner.png",
-      "backgroundColor": null,
-      "borderRadius": ".75rem"
-    },
-    {
-      "network": "Website",
-      "url": "https://envision.siraphop.me/",
-      "title": "Home for All project",
-      "textColor": "#FFF",
-      "backgroundImage": "./assets/Envision-Banner.png",
       "backgroundColor": null,
       "borderRadius": ".75rem"
     }
