@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #ffffff;
+    background: linear-gradient(135deg,
+            #ffffff 25%,
+            #ffdcdc 25%,
+            #ffdcdc 50%,
+            #ffffff 50%,
+            #ffffff 75%,
+            #ffdcdc 75%,
+            #ffdcdc);
+    background-size: 40px 40px;
+    animation: move 4s linear infinite;
+}
+
+a {
+    padding: 1em;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+a:hover {
+    background-color: #a80000;
+    box-shadow: 0px 15px 20px rgba(243, 243, 243, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+a:active {
+    transform: translateY(-1px);
+}
+
+.swing-in-top-fwd {
+    animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 40px 40px;
+    }
+}
