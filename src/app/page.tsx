@@ -11,9 +11,9 @@ const OS = Open_Sans({
 export default function Home() {
   return (
     <>
-      <div className="h-screen w-full flex flex-col items-center justify-center p-3">
-        <div className="absolute top-20 -mt-16 md:-mt-0 -ml-40 w-full rotate-[-0.4rad] text-red-500 font-bold text-6xl">
-          <Marquee direction="right" className="slide-in-left">
+      <div className="md:h-screen w-full mt-10 md:mt-0 flex flex-col items-center justify-center p-3">
+        <div className="absolute top-20 -mt-16 md:-mt-0 -ml-40 w-full rotate-[-0.4rad] text-red-500 font-bold text-5xl md:text-7xl">
+          <Marquee direction="right" className="slide-in-left overflow-hidden">
             <p>FUJATYPING</p><Sparkle size={50} className="mx-10" /><p>FJT</p><Sparkle size={50} className="mx-10" /><p>SIRAPHOP</p><Sparkle size={50} className="mx-10" /><p>フジャタイピング</p><Sparkle size={50} className="mx-10" /><p>후자타이핑</p><Sparkle size={50} className="mx-10" />
           </Marquee>
         </div>
