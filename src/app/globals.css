@@ -50,6 +50,10 @@ a:active {
     animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
+.slide-in-left {
+    animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 @keyframes swing-in-top-fwd {
     0% {
         transform: rotateX(-100deg);
@@ -71,5 +75,17 @@ a:active {
 
     100% {
         background-position: 40px 40px;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }

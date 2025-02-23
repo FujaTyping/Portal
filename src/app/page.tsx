@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Open_Sans } from "next/font/google";
 import Banner from "@/app/assets/media/Banner.webp";
-import { Github, Twitter, Mail, Linkedin } from 'lucide-react';
+import { Github, Twitter, Mail, Linkedin, Sparkle } from 'lucide-react';
+import Marquee from "react-fast-marquee";
 
 const OS = Open_Sans({
   subsets: ['latin'],
@@ -11,6 +12,11 @@ export default function Home() {
   return (
     <>
       <div className="h-screen w-full flex flex-col items-center justify-center p-3">
+        <div className="absolute top-20 -mt-16 md:-mt-0 -ml-40 w-full rotate-[-0.4rad] text-red-500 font-bold text-6xl">
+          <Marquee direction="right" className="slide-in-left">
+            <p>FUJATYPING</p><Sparkle size={50} className="mx-10" /><p>FJT</p><Sparkle size={50} className="mx-10" /><p>SIRAPHOP</p><Sparkle size={50} className="mx-10" /><p>フジャタイピング</p><Sparkle size={50} className="mx-10" /><p>후자타이핑</p><Sparkle size={50} className="mx-10" />
+          </Marquee>
+        </div>
         <div className="bg-gradient-to-r from-red-600 to-red-800 max-w-5xl w-full rounded-lg swing-in-top-fwd">
           <img
             className="w-full max-h-72 rounded-t-lg object-cover"
