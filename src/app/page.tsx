@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import Banner from "@/app/assets/media/Banner.webp";
 import { Github, Twitter, Mail, Linkedin, Sparkle } from 'lucide-react';
 import Marquee from "react-fast-marquee";
+import TimeFlex from "./components/Time";
 
 const OS = Open_Sans({
   subsets: ['latin'],
@@ -11,13 +12,13 @@ const OS = Open_Sans({
 export default function Home() {
   return (
     <>
-      <div className="md:h-screen w-full mt-10 md:mt-0 flex flex-col items-center justify-center p-3">
-        <div className="absolute top-20 -mt-16 md:-mt-0 -ml-40 w-full rotate-[-0.4rad] text-red-500 font-bold text-5xl md:text-7xl">
-          <Marquee direction="right" className="slide-in-left overflow-hidden">
-            <p>FUJATYPING</p><Sparkle size={50} className="mx-10" /><p>FJT</p><Sparkle size={50} className="mx-10" /><p>SIRAPHOP</p><Sparkle size={50} className="mx-10" /><p>フジャタイピング</p><Sparkle size={50} className="mx-10" /><p>후자타이핑</p><Sparkle size={50} className="mx-10" />
-          </Marquee>
-        </div>
-        <div className="bg-gradient-to-r from-red-600 to-red-800 max-w-5xl w-full rounded-lg swing-in-top-fwd">
+      <div className="absolute top-20 -mt-16 md:-mt-0 -ml-40 w-full rotate-[-0.4rad] text-red-500 font-bold text-5xl md:text-7xl">
+        <Marquee direction="right" className="slide-in-left overflow-hidden">
+          <p>FUJATYPING</p><Sparkle size={50} className="mx-10" /><p>FJT</p><Sparkle size={50} className="mx-10" /><p>SIRAPHOP</p><Sparkle size={50} className="mx-10" /><p>フジャタイピング</p><Sparkle size={50} className="mx-10" /><p>후자타이핑</p><Sparkle size={50} className="mx-10" />
+        </Marquee>
+      </div>
+      <div className="w-full mt-10 md:mt-16 flex flex-col items-center justify-center p-6 mb-8 swing-in-top-fwd">
+        <div className="bg-gradient-to-r from-red-600 to-red-800 max-w-5xl w-full rounded-lg">
           <img
             className="w-full max-h-72 rounded-t-lg object-cover"
             src={Banner.src}
@@ -36,7 +37,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-10 flex gap-2">
+        <TimeFlex />
+        <div className="mt-10 flex gap-2">
           <div className="w-9 h-9 bg-red-600 rounded-full"></div>
           <p className="bg-red-600 text-white px-3 py-1 rounded-full text-xl">
             siraphop.me
