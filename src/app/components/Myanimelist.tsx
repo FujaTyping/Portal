@@ -11,8 +11,6 @@ import { Autoplay } from "swiper/modules";
 import Link from "next/link";
 import { MoonStar, ListCollapse } from "lucide-react";
 
-const MALCID = process.env.NEXT_PUBLIC_MAL_CLIENT_ID;
-
 const JN = Jaini({
   weight: ["400"],
   subsets: ["latin"],
@@ -44,9 +42,7 @@ function Myanimelist() {
   const [errorMsg, setErrorMsg] = useState("");
   const options = {
     method: "GET",
-    url: "https://cors-anywhere.herokuapp.com/https://api.myanimelist.net/v2/users/FujaTyping/animelist",
-    params: { fields: "list_status", limit: "20", sort: "list_updated_at" },
-    headers: { "X-MAL-CLIENT-ID": MALCID },
+    url: "/api/mal",
   };
 
   useEffect(() => {
@@ -94,7 +90,7 @@ function Myanimelist() {
                 slidesPerView={2}
                 loop={true}
                 autoplay={{
-                  delay: 2500,
+                  delay: 5000,
                   disableOnInteraction: false,
                 }}
                 breakpoints={{
@@ -117,7 +113,7 @@ function Myanimelist() {
                       />
                       <div className="bg-red-700 p-4 rounded-b-lg">
                         <h1 className="text-lg">{anime.node.title}</h1>
-                        <div className="flex place-content-between mt-2">
+                        <div className="flex flex-col md:flex-row md:place-content-between mt-2">
                           <h2 className="flex items-center gap-2">
                             <ListCollapse size={20} />
                             {anime.list_status.status
