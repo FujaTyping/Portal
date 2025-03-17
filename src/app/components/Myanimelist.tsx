@@ -44,7 +44,7 @@ function Myanimelist() {
   const [errorMsg, setErrorMsg] = useState("");
   const options = {
     method: "GET",
-    url: "https://api.myanimelist.net/v2/users/FujaTyping/animelist",
+    url: "https://cors-anywhere.herokuapp.com/https://api.myanimelist.net/v2/users/FujaTyping/animelist",
     params: { fields: "list_status", limit: "20", sort: "list_updated_at" },
     headers: { "X-MAL-CLIENT-ID": MALCID },
   };
