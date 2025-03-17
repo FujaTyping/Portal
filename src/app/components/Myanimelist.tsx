@@ -82,7 +82,7 @@ function Myanimelist() {
           </div>
           {fetchStatus === false && (
             <>
-              <div className="flex items-center cursor-pointer">
+              <div className="items-center cursor-pointer hidden md:flex">
                 <ChevronLeft
                   onClick={() => swiperRef.current?.slidePrev()}
                   size={40}
