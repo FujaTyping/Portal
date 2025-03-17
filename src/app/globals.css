@@ -3,87 +3,109 @@
 @tailwind utilities;
 
 body {
-    margin: 0;
-    background: #ffffff;
-    overflow-x: hidden;
-    background: linear-gradient(135deg,
-            #ffffff 25%,
-            #ffdcdc 25%,
-            #ffdcdc 50%,
-            #ffffff 50%,
-            #ffffff 75%,
-            #ffdcdc 75%,
-            #ffdcdc);
-    background-size: 40px 40px;
-    animation: move 4s linear infinite;
+  margin: 0;
+  background: #ffffff;
+  overflow-x: hidden;
+  background: linear-gradient(
+    135deg,
+    #ffffff 25%,
+    #ffdcdc 25%,
+    #ffdcdc 50%,
+    #ffffff 50%,
+    #ffffff 75%,
+    #ffdcdc 75%,
+    #ffdcdc
+  );
+  background-size: 40px 40px;
+  animation: move 4s linear infinite;
 }
 
-a {
-    padding: 1em;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
+#MainLink a {
+  padding: 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
-a:hover {
-    background-color: #a80000;
-    box-shadow: 0px 15px 20px rgba(243, 243, 243, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
+#MainLink a:hover {
+  background-color: #a80000;
+  box-shadow: 0px 15px 20px rgba(243, 243, 243, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
-a:active {
-    transform: translateY(-1px);
+#MainLink a:active {
+  transform: translateY(-1px);
 }
 
 .swing-in-top-fwd {
-    animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
 .slide-in-left {
-    animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.loader {
+  height: 4px;
+  width: 80%;
+  --c: no-repeat linear-gradient(#ffffff 0 0);
+  background: var(--c), var(--c), #fcb8b8;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+}
+@keyframes l16 {
+  0% {
+    background-position: -150% 0, -150% 0;
+  }
+  66% {
+    background-position: 250% 0, -150% 0;
+  }
+  100% {
+    background-position: 250% 0, 250% 0;
+  }
 }
 
 @keyframes swing-in-top-fwd {
-    0% {
-        transform: rotateX(-100deg);
-        transform-origin: top;
-        opacity: 0;
-    }
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
 
-    100% {
-        transform: rotateX(0deg);
-        transform-origin: top;
-        opacity: 1;
-    }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
 }
 
 @keyframes move {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    100% {
-        background-position: 40px 40px;
-    }
+  100% {
+    background-position: 40px 40px;
+  }
 }
 
 @keyframes slide-in-left {
-    0% {
-        transform: translateX(-1000px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
