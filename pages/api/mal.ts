@@ -8,7 +8,7 @@ export default async function handler(
 ) {
   try {
     const response = await fetch(
-      "https://api.myanimelist.net/v2/users/FujaTyping/animelist?fields=list_status&limit=10&sort=list_updated_at",
+      "https://api.myanimelist.net/v2/users/FujaTyping/animelist?fields=list_status&limit=20&sort=list_updated_at",
       {
         headers: {
           "X-MAL-CLIENT-ID": `${MALCID}`,
