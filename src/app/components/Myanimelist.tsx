@@ -12,6 +12,7 @@ import {
   ListCollapse,
   ChevronRight,
   ChevronLeft,
+  Tv,
 } from "lucide-react";
 
 import "swiper/css";
@@ -136,12 +137,20 @@ function Myanimelist() {
                     <div className="bg-red-700 p-4 rounded-b-lg">
                       <h1 className="text-lg">{anime.node.title}</h1>
                       <div className="flex flex-col md:flex-row md:place-content-between mt-2">
-                        <h2 className="flex items-center gap-1">
-                          <ListCollapse size={20} />
-                          {anime.list_status.status
-                            .replace(/_/g, " ")
-                            .replace(/\b\w/g, (char) => char.toUpperCase())}
-                        </h2>
+                        <div>
+                          <h2 className="flex items-center gap-1">
+                            <ListCollapse size={20} />
+                            {anime.list_status.status
+                              .replace(/_/g, " ")
+                              .replace(/\b\w/g, (char) => char.toUpperCase())}
+                          </h2>
+                          {anime.list_status.status != "plan_to_watch" && <>
+                            <h2 className="flex items-center gap-2">
+                              <Tv size={16} />
+                              Watched : {anime.list_status.num_episodes_watched} ep
+                            </h2>
+                          </>}
+                        </div>
                         <h2>My Score : {anime.list_status.score}</h2>
                       </div>
                     </div>
