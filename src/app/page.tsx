@@ -6,6 +6,9 @@ import Marquee from "react-fast-marquee";
 import TimeFlex from "./components/Time";
 import Myanimelist from "./components/Myanimelist";
 import Alibum from "./assets/media/PERSONA5.svg"
+import HSJ from "./assets/media/THUNDERSONIA.svg"
+import BL from "./assets/media/ONESNOWMAN.svg"
+import ListSong from "./components/ListSong";
 
 const OS = Open_Sans({
   subsets: ["latin"],
@@ -83,14 +86,20 @@ export default function Home() {
               <h2>
                 From all platform
               </h2>
-              <img src={Alibum.src} alt="Persona" className="mt-4 md:h-[250px] rounded-lg" />
+              <div className="grid grid-cols-2 gap-4 mt-4">
+                <img src={Alibum.src} alt="Persona" className="md:h-[250px] rounded-lg" />
+                <img src={HSJ.src} alt="Persona" className="md:h-[250px] rounded-lg" />
+                <img src={BL.src} alt="Persona" className="md:h-[250px] rounded-lg" />
+              </div>
             </div>
           </div>
         </div>
         <Myanimelist />
         <div className="flex flex-col-reverse sm:flex-row items-center gap-6 w-full max-w-5xl mt-6">
           <TimeFlex />
-          <img src={Alibum.src} alt="Persona" className="hidden sm:block sm:h-[250px] rounded-lg" />
+          <div className="hidden sm:block">
+            <ListSong />
+          </div>
         </div>
         <div className="mt-10 flex gap-2">
           <div className="w-9 h-9 bg-red-600 rounded-full"></div>
