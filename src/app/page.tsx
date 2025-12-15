@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { Open_Sans } from "next/font/google";
 import Banner from "@/app/assets/media/Banner.webp";
-import { Github, Twitter, Mail, Linkedin, Sparkle } from "lucide-react";
+import { Github, Twitter, Mail, Linkedin, Sparkle, Flame } from "lucide-react";
 import Marquee from "react-fast-marquee";
 import TimeFlex from "./components/Time";
 import Myanimelist from "./components/Myanimelist";
+import Alibum from "./assets/media/PERSONA5.svg"
+import HSJ from "./assets/media/THUNDERSONIA.svg"
+import BL from "./assets/media/ONESNOWMAN.svg"
+import ListSong from "./components/ListSong";
 
 const OS = Open_Sans({
   subsets: ["latin"],
@@ -73,8 +77,30 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="bg-gradient-to-r from-red-600 to-red-700 max-w-5xl w-full text-white rounded-lg block sm:hidden mt-6">
+          <div className="place-content-between flex items-center p-6">
+            <div>
+              <h1 className="text-3xl font-bold flex items-center gap-3">
+                <Flame size={30} /> Most playback
+              </h1>
+              <h2>
+                From all platform
+              </h2>
+              <div className="grid grid-cols-2 gap-4 mt-4">
+                <img src={Alibum.src} alt="Persona" className="md:h-[250px] rounded-lg" />
+                <img src={HSJ.src} alt="Persona" className="md:h-[250px] rounded-lg" />
+                <img src={BL.src} alt="Persona" className="md:h-[250px] rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
         <Myanimelist />
-        <TimeFlex />
+        <div className="flex flex-col-reverse sm:flex-row items-center gap-6 w-full max-w-5xl mt-6">
+          <TimeFlex />
+          <div className="hidden sm:block">
+            <ListSong />
+          </div>
+        </div>
         <div className="mt-10 flex gap-2">
           <div className="w-9 h-9 bg-red-600 rounded-full"></div>
           <p className="bg-red-600 text-white px-3 py-1 rounded-full text-xl">

@@ -26,7 +26,7 @@ function TimeFlex() {
 
     return (
         <>
-            <div className="flex flex-col md:flex-row max-w-5xl w-full gap-6 mt-6 text-white">
+            <div className="flex flex-col max-w-5xl w-full gap-6 text-white">
                 <div className="bg-gradient-to-r from-red-600 to-red-700 w-full rounded-lg px-6 py-4 flex items-center place-content-between gap-5">
                     <div><Clock size={38} /></div>
                     <div className="text-left w-full">
